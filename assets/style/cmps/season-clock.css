@@ -1,15 +1,25 @@
 main.container article.season-card {
-    background-color: #f0f0f0a5;
+    background-color: whitesmoke;
     color: var(--netflix-black-light);
+    border: red 2px solid;
+    ;
     width: fit-content;
     margin: auto;
     padding: 15px;
     border-radius: 15px;
-    border: 2px solid #afafaf;
     text-align: center;
     cursor: pointer;
 }
 
+
+main.container article.season-card img {
+    filter: sepia(1);
+}
+
+main.container article.season-card p {
+    font-family: netflix;
+    letter-spacing: 2px;
+}
 
 main.container article.season-card.dark {
     color: whitesmoke;

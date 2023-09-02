@@ -1,26 +1,37 @@
 main.container table.animals {
-    font-size: 1.2rem;
-    font-family: 'Edu VIC WA NT Beginner', cursive;
-    color: #3b6be4;
-    background-color: lightcyan;
-    border: 2px solid #3b6be4;
+    background-color: var(--netflix-black-light);
+    color: var(--netflix-red);
+    font-size: 1.5rem;
+    font-family: 'netflix';
     padding: 5px;
     border-radius: 7px;
     margin: auto;
 }
 
 main.container table.animals tbody td {
-    border: 1px solid rgb(219, 219, 219);
+    color: whitesmoke;
     padding: 5px;
+    border: 3px solid var(--netflix-black);
     border-radius: 5px;
 }
 
+table.animals tbody tr:nth-child(odd) td {
+    color: #b9b9b9;
+    text-shadow: 2px 2px 25px #ffffff8e;
+}
+
 table.animals tbody td:last-child {
+    cursor: pointer;
     transition: filter 0.3s;
+}
+
+table.animals tbody td:last-child::after {
+    font-family: fa;
+    content: '\f002';
 }
 
 table.animals tbody td:last-child:hover {
     filter: brightness(1.5);
-    background-color: #3b6be4;
+    background-color: var(--netflix-red);
     color: whitesmoke;
 }

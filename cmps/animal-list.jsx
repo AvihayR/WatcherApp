@@ -6,7 +6,7 @@ export function AnimalList({ animalInfos }) {
                 <td>{animal.type}</td>
                 <td>{animal.count}</td>
                 <td>
-                    <a href={`https://www.google.com/search?q=${animal.type}`}>Search</a>
+                    <a href={`https://www.google.com/search?q=${animal.type}`}></a>
                 </td>
             </tr>
         )

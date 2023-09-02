@@ -2,7 +2,7 @@ import { utilService } from '../services/util.service.js'
 const { useState } = React
 
 export function SeasonClock() {
-    const [isDarkMode, setIsDarkMode] = useState(false)
+    const [isDarkMode, setIsDarkMode] = useState(true)
 
 
 
