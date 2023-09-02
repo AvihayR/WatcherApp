@@ -41,7 +41,7 @@ export function WatcherApp({ watcherList }) {
             <div className="modal">
                 <button className='close' onClick={() => { onClosePreviewModal() }}>X</button>
                 <h2>{name}</h2>
-                <img src={`../assets/watchers/${imgUrl}`} alt="Profile img" />
+                <img src={`assets/watchers/${imgUrl}`} alt="Profile img" />
                 <h3 className='fav-movies'>Favorite Movies:</h3>
                 <ul>
                     {(!movies.length) ? <span>No favorite movies yet</span> : movies.map(movie => <li key={movie + 'movie'}>{movie}</li>)}
