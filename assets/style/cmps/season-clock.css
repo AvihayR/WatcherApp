@@ -1,0 +1,17 @@
+main.container article.season-card {
+    background-color: #f0f0f0a5;
+    color: var(--netflix-black-light);
+    width: fit-content;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #afafaf;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+main.container article.season-card.dark {
+    color: whitesmoke;
+    background-color: #484848;
+}

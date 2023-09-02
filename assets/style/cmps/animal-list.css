@@ -1,0 +1,26 @@
+main.container table.animals {
+    font-size: 1.2rem;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    color: #3b6be4;
+    background-color: lightcyan;
+    border: 2px solid #3b6be4;
+    padding: 5px;
+    border-radius: 7px;
+    margin: auto;
+}
+
+main.container table.animals tbody td {
+    border: 1px solid rgb(219, 219, 219);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+table.animals tbody td:last-child {
+    transition: filter 0.3s;
+}
+
+table.animals tbody td:last-child:hover {
+    filter: brightness(1.5);
+    background-color: #3b6be4;
+    color: whitesmoke;
+}

@@ -1,0 +1,24 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--netflix-black-light);
+  color: var(--netflix-red);
+  padding: 1em;
+}
+
+.app-header ul {
+  display: flex;
+  gap: 1em;
+  font-family: 'netflix';
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.app-header ul li {
+  transition: color 0.4s;
+}
+
+.app-header ul li:hover {
+  color: whitesmoke;
+}

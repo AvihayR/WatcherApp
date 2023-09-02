@@ -1,0 +1,105 @@
+main.container .watcher-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.container .watcher-app h2.title {
+    font-size: 3rem;
+    letter-spacing: 0.2em;
+    font-family: netflix;
+    color: var(--netflix-red);
+    margin: 0;
+}
+
+main.container .watcher-app button.add-watcher {
+    font-size: 1.2rem;
+    margin-block-end: 5rem;
+}
+
+main.container .watcher-app .cards-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 70%;
+    justify-content: center;
+}
+
+.watcher-app .cards-container .card {
+    text-align: center;
+    transition: scale 0.4s, margin 0.4s;
+}
+
+.watcher-app .cards-container .card:hover {
+    scale: 1.1;
+}
+
+.cards-container .card button.remove-watcher::after {
+    font-family: fa;
+    content: '\f235';
+}
+
+main.container .watcher-app .modal {
+    position: absolute;
+    top: 25vh;
+    left: calc(50vw - var(--modal-width) / 2);
+    width: var(--modal-width);
+    padding: 15px;
+
+    border-radius: 15px;
+    text-align: center;
+    background-color: var(--netflix-black-light);
+    box-shadow: 5px 5px 70px var(--netflix-black);
+}
+
+.watcher-app .modal h2,
+.watcher-app .modal h3,
+.watcher-app .modal span,
+.watcher-app .modal li {
+    font-family: netflix;
+}
+
+.watcher-app .modal h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: var(--netflix-red);
+    margin-block-end: 10px;
+}
+
+.watcher-app .modal h3 {
+    margin-block-end: 5px;
+    color: var(--netflix-red);
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.watcher-app .modal ul li {
+    font-size: 1.2em;
+}
+
+.watcher-app .modal ul li:nth-child(even) {
+    color: rgb(141, 141, 141);
+    text-shadow: 1px 1px 7px rgba(210, 210, 210, 0.356);
+}
+
+.watcher-app .modal img {
+    margin-block-end: 15px;
+}
+
+.watcher-app .modal span {
+    display: block;
+}
+
+.watcher-app .modal button.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--netflix-black);
+    color: var(--netflix-red);
+}
+
+.watcher-app .modal button.close:hover {
+    background-color: var(--netflix-red);
+    color: whitesmoke;
+}

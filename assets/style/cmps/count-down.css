@@ -1,0 +1,9 @@
+main.container h2.timer {
+    width: fit-content;
+    margin: auto;
+    font-size: 2rem;
+}
+
+main.container h2.timer span.time.red {
+    color: rgb(178, 44, 44);
+}
