@@ -1,0 +1,24 @@
+main.container section.mouse-pos {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: fit-content;
+    padding: 15px;
+    background-color: var(--netflix-black-light);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+main.container section.mouse-pos h2 {
+    margin-block-end: 5px;
+}
+
+main.container section.mouse-pos p {
+    font-family: netflix;
+    letter-spacing: 2px;
+}
+
+main.container section.mouse-pos button:hover {
+    background-color: var(--netflix-black);
+}

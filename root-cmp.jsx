@@ -4,6 +4,7 @@ import { SeasonClock } from './cmps/season-clock.jsx'
 import { CountDown } from './cmps/count-down.jsx'
 import { watcherService } from './services/watcher.service.js'
 import { WatcherApp } from './cmps/watcher-app.jsx'
+import { Mouser } from './cmps/mouser.jsx'
 const { useState } = React
 
 const animals = [
@@ -31,6 +32,9 @@ export function App() {
                     <a href="" onClick={() => { chooseComp(event) }}>Watcher</a>
                 </li>
                 <li>
+                    <a href="" onClick={() => { chooseComp(event) }}>Mouser</a>
+                </li>
+                <li>
                     <a href="" onClick={() => { chooseComp(event) }}>Season clock</a>
                 </li>
                 <li>
@@ -47,6 +51,7 @@ export function App() {
             {compToRender === 'season clock' && <SeasonClock />}
             {compToRender === 'timer' && <CountDown startFrom={10} onDone={() => console.log('Done!')} />}
             {compToRender === 'watcher' && < WatcherApp watcherList={watcherList} />}
+            {compToRender === 'mouser' && <Mouser />}
         </main>
     </section>)
 }

@@ -20,18 +20,23 @@ table.animals tbody tr:nth-child(odd) td {
     text-shadow: 2px 2px 25px #ffffff8e;
 }
 
-table.animals tbody td:last-child {
-    cursor: pointer;
-    transition: filter 0.3s;
+table.animals td:last-child a {
+    font-family: fa;
 }
 
-table.animals tbody td:last-child::after {
+table.animals tbody td:last-child a::after {
     font-family: fa;
     content: '\f002';
 }
 
+table.animals tbody td:last-child {
+    cursor: pointer;
+    transition: filter 0.3s, background-color 0.3s;
+}
+
+
 table.animals tbody td:last-child:hover {
     filter: brightness(1.5);
     background-color: var(--netflix-red);
-    color: whitesmoke;
+    color: var(--netflix-black);
 }
